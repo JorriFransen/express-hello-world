@@ -22,5 +22,3 @@ deploy-code-job:
     - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
   script:
     - git remote
-    # TODO: merge feature branch into main
-		# TODO: push main to github
