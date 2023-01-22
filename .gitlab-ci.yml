@@ -25,5 +25,4 @@ deploy-code-job:
     - git fetch github
     - git checkout github/main
     - git merge "origin/$CI_COMMIT_BRANCH"
-    - echo "$CI_DEFAULT_BRANCH"
     - git push github HEAD:main
