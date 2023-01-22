@@ -22,3 +22,6 @@ deploy-code-job:
     - ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
   script:
     - git remote get-url origin
+    - git remote add github "$GITHUB_URL"
+    - git fetch github
+    - git checkout github/main
