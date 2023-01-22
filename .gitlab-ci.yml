@@ -25,5 +25,7 @@ deploy-code-job:
     - git remote add github "$GITHUB_URL"
     - git fetch github
     - git checkout github/main
+    - git status
     - git merge origin/feature
+    - git status
     - git push github main
